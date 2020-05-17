@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Card, CardBody, CardFooter, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 class Register extends Component {
   render() {
@@ -44,6 +45,9 @@ class Register extends Component {
                       <Input type="password" placeholder="Repeat password" autoComplete="new-password" />
                     </InputGroup>
                     <Button color="success" block>Create Account</Button>
+                    <Link to="/login">
+                      <Button color="link" block>Login with existing account?</Button>
+                    </Link>
                   </Form>
                 </CardBody>
                 <CardFooter className="p-4">
